@@ -1,0 +1,248 @@
+/* Colors 
+---- #7dd3fc
+---- #0369a1
+---- #0c1519
+
+*/
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+body{
+    background: #18181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #7dd3fc;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+/* ---- Left side ---- */
+.container .left_Side{
+    position:relative;
+    background: #538ca7;
+    padding: 40px;
+}
+
+/* ---- Profile Text ---- */
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+
+}
+
+/* ---- Contact Info---- */
+.contactInfo{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position:relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #18181b;
+}
+
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+    color: #18181b;
+    font-weight: 700;
+}
+
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 700;
+}
+
+.contactInfo.education h4 a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/*---- Star point ----*/
+.contactInfo.lang .starpoint{
+ position: absolute;
+ width: 100%;
+ height: 6px;
+ transform: translate(-50%, -50%);
+}
+.contactInfo.lang.starpoint li span.checked{
+    color: orange;
+}
+
+
+/* ---- right side ---- */
+.container .right_Side{
+    position:relative;
+    background: #7dd3fc;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #0c1519;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #333;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_c{
+    min-width:150px;
+}
+
+.about .box .year_c h5{
+    text-transform: uppercase;
+    color: rgba(13, 23, 27, 0.806);
+    font-weight: 600;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color:#18181b;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #0c1519cd;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #538ca7;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #18181b;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.interest ul li{
+    list-style: none;
+    color: #18181b;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa{
+    color: #18181b;
+    font-size: 18px;
+    width: 30px;
+}
