@@ -28,6 +28,13 @@ a{
 a:hover{
     color: #0c1519;
 }
+button{
+    border-radius: 25px;
+    background-color: #7dd3fc;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 15px;
+}
 .container{
     position: relative;
     width: 100%;
